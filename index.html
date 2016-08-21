@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Armon Fardad</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="icon" href="img/armonicon.png">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link href="css/stylesheet.css" rel="stylesheet">
+  
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Armon Fardad</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">HOME</a></li>
+        <li><a href="resume.html">RESUME</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">ROBOTICS
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-header">FIRST FTC</li>
+            <li><a href="robo-ce.html">Cascade Effect 2014-2015</a></li>
+            <li><a href="robo-rq.html">Res-Q 2015-2016</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Red Shift Robotics</li>
+            <li><a href="robo-mt.html">About My Team</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Other</li>
+            <li><a href="robo-is-1415.html">Independent Study 2014-2015</a></li> 
+          </ul>
+        <li><a href="http://saasmath.seattleacademy.org/armonfardad/">PROGRAMMING</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        
+        <li><a href="#"><span class=""></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center">
+  <h1 class="super-h1">Armon Fardad</h1>
+  <br>
+  <img src="img/armon.jpg" height=250px alt="armon pic">
+  <p></p>
+  <br>
+  <p class="homepp">On this website, you will learn a little bit about who I am. I have included my resume, information about my robotics experience, and most, if not all, of my previous programming work.</p>
+
+  <p class="homepp">If you have any questions or would like to hear more about anything shown here, please do not hesitate to contact me.</p>
+
+        
+
+
+</div>
+
+
+
+
+<!-- Footer -->
+<footer>
+<p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy;2016 Armon Fardad</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().
+    }, 900, function(){
+   
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  });
+})
+</script>
+
+</body>
+</html>

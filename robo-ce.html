@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Armon Fardad</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="icon" href="img/armonicon.png">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link href="css/stylesheet.css" rel="stylesheet">
+  
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Armon Fardad</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a></li>
+        <li ><a href="resume.html">RESUME</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">ROBOTICS
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-header">FIRST FTC</li>
+            <li class="active"><a href="#">Cascade Effect 2014-2015</a></li>
+            <li><a href="robo-rq.html">Res-Q 2015-2016</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Red Shift Robotics</li>
+            <li><a href="robo-mt.html">About My Team</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Other</li>
+            <li><a href="robo-is-1415.html">Independent Study 2014-2015</a></li> 
+          </ul>
+        </li>
+        <li><a href="http://saasmath.seattleacademy.org/armonfardad/">PROGRAMMING</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        
+        <li><a href="#"><span class=""></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- Container (The Band Section) -->
+<div id="band" class="container">
+  
+        <h2><center>FIRST FTC - SAAS Robotics</center></h2><h1><center>Cascade Effect 2014-2015</center></h1><h2><center>Team 5619 - RoboCardinals - JV</center></h2>
+        <br>
+        <p><strong><center>Game Description</center></strong></p>
+        <center><iframe width="500" height="500" src="https://www.youtube.com/embed/ABmBxCwHV94" frameborder="0" allowfullscreen></iframe></center>
+        <p><strong><center>Our Robot</center></strong></p>
+          <div class="row form-group">
+        <div class="col-xs-12 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title"><center>Scissor Lift</center></h2>
+                </div>
+                <div class="panel-image hide-panel-body">
+                    <img src="img/56191.jpg" class="panel-image-preview" alt="5919 1st pic" />
+                    
+                </div>
+                
+                <div class="panel-footer text-center">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title"><center>5619</center></h2>
+                </div>
+                <div class="panel-image hide-panel-body">
+                    <img src="img/56192.jpg" class="panel-image-preview" alt="5919 2nd pic" />
+                   
+                </div>
+                
+                
+                <div class="panel-footer text-center">
+                    
+                </div>
+            </div>
+        </div>
+  </div>
+        <p><strong><center>My Contributions</center</strong></p>
+        <p><center>Leader and Driver for 5619. Helped code the robot, and build the chassis/other various mechanisms that went on the robot.</center></p>
+        <p><strong><center>5619's Accomplishments</center></strong></p>
+        <p><center>Competed in league, inter-league, and Idaho State Competition matches.</center></p>
+        
+  <br>
+  
+</div>
+
+
+  
+  
+
+
+
+<!-- Footer -->
+<footer>
+<p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2016 Armon Fardad
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().
+    }, 900, function(){
+   
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  });
+})
+</script>
+
+</body>
+</html>
